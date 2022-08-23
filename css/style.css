@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DS Digital';
+  src: url(../fonts/ds_digital/DS-DIGI.TTF);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -51,6 +56,7 @@ body {
 }
 
 .watch {
-  font-size: 4.5em;
+  font-size: 8em;
   color: #14ec14;
+  font-family: 'DS Digital', sans-serif;
 }

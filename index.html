@@ -57,22 +57,45 @@
     <div class="container">
       <header class="header">
         <ul>
-          <li><a>Cronômetro</a></li>
+          <li><a onclick="navigateTo('timer')">Cronômetro</a></li>
           <li><a onclick="navigateTo('watch')">Relógio</a></li>
           <li><a>Temporizador</a></li>
         </ul>
       </header>
 
       <div class="content">
-        <div class="watch">
-          <span class="hours">00</span>:<span class="minutes">00</span>:<span
-            class="seconds"
-            >00</span
-          >
+        <div class="watch hidden">
+          <div class="time-units">
+            <span class="hours">00</span>:<span class="minutes">00</span>:<span
+              class="seconds"
+              >00</span
+            >
+          </div>
+        </div>
+
+        <div class="timer">
+          <div class="time-units">
+            <span class="hours">00</span>:<span class="minutes">00</span>:<span
+              class="seconds"
+              >00</span
+            >
+          </div>
+
+          <div class="timer-functions">
+            <button class="btn-start" onclick="startTimer()">Iniciar</button>
+            <button class="btn-pause" disabled onclick="pauseTimer()">
+              Pausar
+            </button>
+            <button class="btn-restart" disabled onclick="restartTimer()">
+              Zerar
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/watch.js"></script>
+    <script src="js/timer.js"></script>
   </body>
 </html>

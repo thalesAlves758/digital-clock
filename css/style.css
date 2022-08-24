@@ -55,10 +55,48 @@ body {
   align-items: center;
 }
 
-.watch {
+.time-units {
   font-size: 8em;
   color: #14ec14;
   font-family: 'DS Digital', sans-serif;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-functions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 475px;
+}
+
+.content > div button {
+  width: calc(100% / 3 - 12px);
+  height: 30px;
+  border: none;
+  font-size: 1.2em;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #096E09;
+}
+
+.content > div button:hover {
+  cursor: pointer;
+  background-color: #14EC14;
+}
+
+.content > div button:active {
+  background-color: #0FBA0F;
+}
+
+.content > div button:disabled {
+  background-color: #5BF05B;
+  cursor: default;
 }
 
 .hidden {

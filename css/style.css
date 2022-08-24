@@ -60,3 +60,7 @@ body {
   color: #14ec14;
   font-family: 'DS Digital', sans-serif;
 }
+
+.hidden {
+  display: none;
+}

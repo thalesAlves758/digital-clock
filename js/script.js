@@ -1,3 +1,11 @@
+function navigateTo(targetClassName) {
+  document.querySelectorAll(".content div").forEach((element) => {
+    element.classList[
+      element.classList.contains(targetClassName) ? "remove" : "add"
+    ]("hidden");
+  });
+}
+
 const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 const updateWatch = () => {

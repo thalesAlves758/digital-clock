@@ -47,6 +47,15 @@ body {
   padding: 40px;
 }
 
+.header > ul a:hover {
+  cursor: pointer;
+  filter: brightness(2);
+}
+
+.header > ul a:active {
+  color: #0FBA0F;
+}
+
 .content {
   width: 100%;
   height: 100%;

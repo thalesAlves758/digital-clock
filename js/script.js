@@ -23,3 +23,17 @@ const insertTimeUnitsInto = (
     );
   });
 };
+
+const getTimeUnitsBySeconds = (totalSeconds) => {
+  let seconds, minutes, hours;
+
+  seconds = totalSeconds;
+
+  minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+
+  hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  return { seconds, minutes, hours };
+};

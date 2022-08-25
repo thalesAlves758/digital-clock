@@ -61,14 +61,14 @@ body {
   font-family: 'DS Digital', sans-serif;
 }
 
-.timer {
+.timer, .delayer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.timer-functions {
+.content > div > .functions {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -83,6 +83,7 @@ body {
   color: #ffffff;
   border-radius: 5px;
   background-color: #096E09;
+  margin-top: 15px;
 }
 
 .content > div button:hover {
@@ -97,6 +98,29 @@ body {
 .content > div button:disabled {
   background-color: #5BF05B;
   cursor: default;
+}
+
+.delayer ion-icon {
+  color: #096E09;
+  font-size: 25px;
+}
+
+.delayer ion-icon:hover {
+  cursor: pointer;
+  color: #14EC14;
+}
+
+.delayer ion-icon:active {
+  color: #0FBA0F;
+}
+
+.editable-timer, .editable-timer > div, .editable-timer .number {
+  display: flex;
+  align-items: center;
+}
+
+.editable-timer .number{
+  flex-direction: column;
 }
 
 .hidden {

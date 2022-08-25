@@ -9,15 +9,9 @@ const startTimer = () => {
   timerIntervalId = setInterval(() => {
     timerSeconds++;
 
-    let parcialSeconds = timerSeconds;
+    const { hours, minutes, seconds } = getTimeUnitsBySeconds(timerSeconds);
 
-    let parcialMinutes = parseInt(parcialSeconds / 60);
-    parcialSeconds -= parcialMinutes * 60;
-
-    let parcialHours = parseInt(parcialMinutes / 60);
-    parcialMinutes -= parcialHours * 60;
-
-    insertTimeUnitsInto("timer", parcialHours, parcialMinutes, parcialSeconds);
+    insertTimeUnitsInto("timer", hours, minutes, seconds);
   }, ONE_SECOND);
 };
 

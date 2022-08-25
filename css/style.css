@@ -49,7 +49,7 @@ body {
 }
 
 .header > ul a:hover {
-  cursor: url(../img/icons8-hand-cursor-24.png), auto;
+  cursor: url(../img/icons8-hand-cursor-24.png), pointer;
   filter: brightness(2);
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .content > div button:hover {
-  cursor: url(../img/icons8-hand-cursor-24.png), auto;
+  cursor: url(../img/icons8-hand-cursor-24.png), pointer;
   background-color: #14EC14;
 }
 
@@ -107,7 +107,7 @@ body {
 
 .content > div button:disabled {
   background-color: #5BF05B;
-  cursor: url(../img/icons8-cursor-24.png), auto;
+  cursor: url(../img/icons8-cursor-24.png), default;
 }
 
 .delayer ion-icon {
@@ -116,7 +116,7 @@ body {
 }
 
 .delayer ion-icon:hover {
-  cursor: url(../img/icons8-hand-cursor-24.png), auto;
+  cursor: url(../img/icons8-hand-cursor-24.png), pointer;
   color: #14EC14;
 }
 

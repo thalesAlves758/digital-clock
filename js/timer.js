@@ -16,10 +16,12 @@ const startTimer = () => {
 };
 
 const pauseTimer = () => {
-  document.querySelector(".timer .btn-start").disabled = false;
   document.querySelector(".timer .btn-pause").disabled = true;
 
   clearInterval(timerIntervalId);
+
+  document.querySelector(".timer .btn-start").classList.add("hidden");
+  document.querySelector(".timer .btn-resume").classList.remove("hidden");
 };
 
 const restartTimer = () => {
@@ -31,4 +33,11 @@ const restartTimer = () => {
   timerSeconds = 0;
 
   insertTimeUnitsInto("timer", 0, 0, 0);
+};
+
+const resumeTimer = () => {
+  startTimer();
+
+  document.querySelector(".timer .btn-resume").classList.add("hidden");
+  document.querySelector(".timer .btn-start").classList.remove("hidden");
 };
